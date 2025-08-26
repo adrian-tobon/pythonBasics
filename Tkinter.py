@@ -68,7 +68,7 @@ def progreso():
     
 
 barraProgreso = ttk.Progressbar(marco,mode="determinate",length=200)
-botonProgreso = tk.Button(marco,text="Suma",command=progreso,activebackground="red",activeforeground="yellow")
+botonProgreso = tk.Button(marco,text="Progreso",command=progreso,activebackground="red",activeforeground="yellow")
 
 '''
 text = tk.Text(marco, wrap="word",width=50,height=20)
@@ -99,11 +99,11 @@ resultado = tk.Label(marco,bg="lightgray")
 '''
 
 marco.pack(pady=10,padx=10,fill=tk.BOTH, expand=True)
-label.pack()
+label.pack(side="top")
 entryA.pack()
 entryB.pack()
 entryResult.pack()
-boton.pack()
+boton.pack(side="bottom")
 #escala.pack()
 #lista.pack()
 resultado.pack()
