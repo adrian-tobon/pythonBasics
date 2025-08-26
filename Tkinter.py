@@ -48,7 +48,7 @@ marco = tk.Frame(ventana,width=300,height=200,bg="lightgray", borderwidth=2,reli
 label = tk.Label(marco, text="Matematicas",anchor="center",font=("Helvetica",24,"normal"))
 entryA = tk.Entry(marco)
 entryB = tk.Entry(marco)
-entryResult = tk.Entry(marco,state="disabled")
+entryResult = tk.Entry(marco)
 
 boton = tk.Button(marco,text="Suma",command=suma,activebackground="red",activeforeground="yellow")
 resultado = tk.Label(marco,bg="lightgray")
